@@ -109,11 +109,12 @@ F H <BR>
 2 3 <BR>
 2 4 <BR>
 <hr>
+
+
 ## Output
 <img width="896" height="171" alt="image" src="https://github.com/user-attachments/assets/d461384b-c97b-409c-aab6-6f743656b85a" />
 
-<hr>
+
 <h3>Result:</h3>
-<hr>
 <p>Thus,a Graph was constructed and implementation of Depth First Search for the same graph was done successfully.</p>
 
