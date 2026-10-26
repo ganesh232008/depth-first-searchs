@@ -71,8 +71,6 @@ G F <BR>
 F H <BR>
 <hr>
 
-## Output
-<img width="887" height="260" alt="image" src="https://github.com/user-attachments/assets/fad0217d-60f5-434d-9d16-e183acd54a48" />
 
 
 <hr>
@@ -136,7 +134,8 @@ print(traversepath)
 
 ## Output:
 
-<img width="1147" height="540" alt="image" src="https://github.com/user-attachments/assets/610aae5f-b637-4ddf-8eb3-5f16ecbcf48c" />
+<img width="1147" height="540" alt="image" src="https://github.com/user-attachments/assets/ec3697a7-d7f4-407b-8268-ed3d99d9f05c" />
+
 
 <h3>Result:</h3>
 <p>Thus,a Graph was constructed and implementation of Depth First Search for the same graph was done successfully.</p>
