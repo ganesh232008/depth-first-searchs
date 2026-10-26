@@ -67,7 +67,9 @@ C G <BR>
 D F <BR>
 G F <BR>
 F H <BR>
+
 <hr>
+
 <h3>Sample Output</h3>
 <hr>
 ['A', 'B', 'E', 'D', 'C', 'G', 'F', 'H']
@@ -84,6 +86,7 @@ F H <BR>
 2 3 <BR>
 2 4 <BR>
 <hr>
+
 <h3>Sample Output</h3>
 <hr>
 ['0', '1', '2', '3', '4']
