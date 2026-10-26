@@ -54,31 +54,7 @@ Now, the Stack becomes empty, which means we have visited all the nodes, and our
  <li>If Not Visited, add it to the STACK. Else Call The Function Again Until No more nodes needs to be visited.</li>
 </ol></B>
 
-## Program :
-```
-from collections import deque 
-from collections import defaultdict 
-def dfs(graph,start,visited,path):
-    path.append(start)
-    visited[start]=True
-    for neighbour in graph[start]:
-        if visited[neighbour]==False:
-            dfs(graph,neighbour,visited,path)
-            visited[neighbour]=True
-    return path
-graph=defaultdict(list)
-n,e=map(int,input().split())
-for i in range(e):
-    u,v=map(str,input().split())
-    graph[u].append(v)
-    graph[v].append(u)
-start='A' 
-visited=defaultdict(bool)
-path=[] 
-traversedpath=dfs(graph,start,visited,path)
-print(traversedpath)
 
-```
 
 <hr>
 <h3>Sample Input</h3>
@@ -111,9 +87,56 @@ F H <BR>
 <hr>
 
 
-## Output
-<img width="896" height="171" alt="image" src="https://github.com/user-attachments/assets/d461384b-c97b-409c-aab6-6f743656b85a" />
+## Program:
 
+```
+from collections import defaultdict
+import networkx as nx
+import matplotlib.pyplot as plt
+
+graph=defaultdict(list)
+G=nx.Graph()
+nodes,edges=map(int,input().split())
+for i in range(edges):
+    u,v=map(str,input().split())
+    graph[u].append(v)
+    graph[v].append(u)
+    G.add_edge(u,v)
+fig, ax = plt.subplots()
+pos = nx.spring_layout(G)
+
+nx.draw_networkx_nodes(G, pos, ax=ax, node_color="lightblue", node_size=2000)
+nx.draw_networkx_edges(G, pos, ax=ax, edge_color="red", width=2)
+nx.draw_networkx_labels(G, pos, ax=ax)
+
+plt.show()
+print(graph)
+
+#Depth First Search
+def dfs(graph, start, visited, path):
+    path.append(start)
+    visited[start] = True
+
+    for neighbour in graph[start]:
+        if not visited[neighbour]:
+            dfs(graph, neighbour, visited, path)
+
+    return path
+
+# input start node
+start = input()
+
+path = []
+visited = defaultdict(bool)
+traversepath = dfs(graph, start, visited, path)
+print("Depth First Search:")
+print(traversepath)
+
+```
+
+## Output:
+
+<img width="1147" height="540" alt="image" src="https://github.com/user-attachments/assets/610aae5f-b637-4ddf-8eb3-5f16ecbcf48c" />
 
 <h3>Result:</h3>
 <p>Thus,a Graph was constructed and implementation of Depth First Search for the same graph was done successfully.</p>
