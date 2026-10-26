@@ -1,6 +1,6 @@
 <h1>ExpNo 2 : Implement Depth First Search Traversal of a Graph</h1> 
 <h3>Name: L Ganesh Kanna </h3>
-<h3>Register Number:  212225230072   </h3>
+<h3>Register Number: 212225230072 </h3>
 <H3>Aim:</H3>
 <p> To Implement Depth First Search Traversal of a Graph using Python 3.</p>
 <h3>Theory:</h3>
@@ -54,8 +54,6 @@ Now, the Stack becomes empty, which means we have visited all the nodes, and our
  <li>If Not Visited, add it to the STACK. Else Call The Function Again Until No more nodes needs to be visited.</li>
 </ol></B>
 
-
-
 <hr>
 <h3>Sample Input</h3>
 <hr>
@@ -70,8 +68,11 @@ D F <BR>
 G F <BR>
 F H <BR>
 <hr>
+<h3>Sample Output</h3>
+<hr>
+['A', 'B', 'E', 'D', 'C', 'G', 'F', 'H']
 
-
+<hr>
 
 <hr>
 <h3>Sample Input</h3>
@@ -83,9 +84,11 @@ F H <BR>
 2 3 <BR>
 2 4 <BR>
 <hr>
+<h3>Sample Output</h3>
+<hr>
+['0', '1', '2', '3', '4']
 
-
-## Program:
+# Programe:
 
 ```
 from collections import defaultdict
@@ -132,11 +135,12 @@ print(traversepath)
 
 ```
 
-## Output:
+# Output:
 
-<img width="1147" height="540" alt="image" src="https://github.com/user-attachments/assets/ec3697a7-d7f4-407b-8268-ed3d99d9f05c" />
+<img width="1147" height="540" alt="image" src="https://github.com/user-attachments/assets/88657391-d3ae-4e72-b509-97d769d0a34f" />
 
 
+<hr>
 <h3>Result:</h3>
+<hr>
 <p>Thus,a Graph was constructed and implementation of Depth First Search for the same graph was done successfully.</p>
-
